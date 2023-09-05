@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.claro{
+
+    background-color: rgba(0, 255, 0, 0.397);
+
+}
+
+.medio{
+
+    background-color: rgb(7, 255, 7);
+
+}
+
+.escuro{
+
+    background-color: green;
+
+}
+
+.rclaro{
+
+    background-color: #fa535371;
+
+}
+
+.rmedio{
+
+    background-color: #f82525b0;
+
+}
+
+.rescuro{
+
+    background-color: #ac0404;
+
+}
