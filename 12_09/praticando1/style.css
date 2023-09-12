@@ -1,0 +1,28 @@
+body {
+
+    background-color: cadetblue
+}
+
+.div1 {
+
+    background-color: indianred
+}
+
+.div2 {
+    background-image: url("https://pbs.twimg.com/profile_images/1466616701223583748/iLeFCUmu_400x400.jpg");
+    background-size: contain;
+    color: blue;
+}
+
+.div3{
+
+    background-color: darkseagreen;
+    opacity: 0.7;
+}
+
+.gatoFundo{
+
+    background-repeat: no-repeat;
+    margin-top: -60px;
+    
+}
