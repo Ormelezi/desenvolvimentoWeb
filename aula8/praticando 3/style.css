@@ -1,0 +1,28 @@
+.div1{
+
+    background-color: cornflowerblue;
+    border-bottom: 10px solid pink;
+    border-right: 20px solid pink;
+
+}
+
+p{
+
+text-indent: 15px;
+
+}
+
+.div2{
+
+border: dotted 7px purple;
+padding: 10px;
+
+}
+
+.imagem{
+
+    width: 500px;
+    border:double 15px purple;
+
+
+}
