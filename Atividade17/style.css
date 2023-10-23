@@ -1,0 +1,13 @@
+div {
+  width: 70%;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label, input, textarea, [type="checkbox"] {
+  margin-bottom: 10px;
+}
