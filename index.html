@@ -6,44 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <style>
+
+        .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        }
+
+        .fixed-height {
+        height: 90vh; /* Altura fixa da div */
+        overflow-y: auto; /* Adiciona barra de rolagem quando o conteúdo ultrapassa a altura fixa */
+        margin-right: 20px; /* Identação para a direita */
+        float: right; /* Identação para a direita caso ultrapasse os 200 pixels */
+        }
+
+        body {
+            background: linear-gradient(to bottom, #5bd0cf, #0052cc);
+            height: 100vh;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+        }
+
         ul {
-            list-style-type: none; /* Remove os marcadores de lista */
-            padding: 0; /* Remove o preenchimento padrão da lista */
+            list-style-type: none;
+            padding: 0;
+            display: flexbox;
         }
 
         li {
-            display: block; /* Exibe os itens da lista como blocos */
-            margin-bottom: 10px; /* Adiciona espaço entre os itens (opcional) */
+            display: block;
+            margin-bottom: 10px;
         }
 
         a {
-            text-decoration: none; /* Remove sublinhado padrão dos links */
+            display: inline-block;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
-  
+
 <body>
-    <h1> Praticandos - Angelo Henrique Ormelezi Andrade</h1>
-    <ul>
-        <li><a href="./Atividade01/atividade1.html" target="_blank">Atividade 01</a></li>
-        <li><a href="./Atividade02/aula3.html" target="_blank">Atividade 02</a></li>
-        <li><a href="./Atividade03/index.html" target="_blank">Atividade 03</a></li>
-        <li><a href="./Atividade04/index.html" target="_blank">Atividade 04</a></li>
-        <li><a href="./Atividade05/index.html" target="_blank">Atividade 05</a></li>
-        <li><a href="./Atividade06/index.html" target="_blank">Atividade 06</a></li>
-        <li><a href="./Atividade07/index.html" target="_blank">Atividade 07</a></li>
-        <li><a href="./Atividade08/index.html" target="_blank">Atividade 08</a></li>
-        <li><a href="./Atividade09/index.html" target="_blank">Atividade 09</a></li>
-        <li><a href="./Atividade10/main.html" target="_blank">Atividade 10</a></li>
-        <li><a href="./Atividade11/main.html" target="_blank">Atividade 11</a></li>
-        <li><a href="./Atividade12/main.html" target="_blank">Atividade 12</a></li>
-        <li><a href="./Atividade13/index.html" target="_blank">Atividade 13</a></li>
-        <li><a href="./Atividade14/index.html" target="_blank">Atividade 14</a></li>
-        <li><a href="./Atividade15/index.html" target="_blank">Atividade 15</a></li>
-        <li><a href="./Atividade16/index.html" target="_blank">Atividade 16</a></li>
-        <li><a href="./Atividade17/index.html" target="_blank">Atividade 17</a></li>
-        <li><a href="./Atividade18/index.html" target="_blank">Atividade 18</a></li>
-    </ul>
+    <h1>Praticandos - Angelo Henrique Ormelezi Andrade</h1>
+    <div class="container">
+        <div class="fixed-height">
+            <ul>
+                <li><a href="./Atividade01/atividade1.html" target="_blank">Atividade 01</a></li>
+                <li><a href="./Atividade02/aula3.html" target="_blank">Atividade 02</a></li>
+                <li><a href="./Atividade03/index.html" target="_blank">Atividade 03</a></li>
+                <li><a href="./Atividade04/index.html" target="_blank">Atividade 04</a></li>
+                <li><a href="./Atividade05/index.html" target="_blank">Atividade 05</a></li>
+                <li><a href="./Atividade06/index.html" target="_blank">Atividade 06</a></li>
+                <li><a href="./Atividade07/index.html" target="_blank">Atividade 07</a></li>
+                <li><a href="./Atividade08/index.html" target="_blank">Atividade 08</a></li>
+                <li><a href="./Atividade09/index.html" target="_blank">Atividade 09</a></li>
+                <li><a href="./Atividade10/main.html" target="_blank">Atividade 10</a></li>
+                <li><a href="./Atividade11/main.html" target="_blank">Atividade 11</a></li>
+                <li><a href="./Atividade12/main.html" target="_blank">Atividade 12</a></li>
+                <li><a href="./Atividade13/index.html" target="_blank">Atividade 13</a></li>
+                <li><a href="./Atividade14/index.html" target="_blank">Atividade 14</a></li>
+                <li><a href="./Atividade15/index.html" target="_blank">Atividade 15</a></li>
+                <li><a href="./Atividade16/index.html" target="_blank">Atividade 16</a></li>
+                <li><a href="./Atividade17/index.html" target="_blank">Atividade 17</a></li>
+                <li><a href="./Atividade18/index.html" target="_blank">Atividade 18</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
