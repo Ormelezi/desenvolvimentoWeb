@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body class="bg-danger bg-gradient m-4">
+    
+    <div class="container">
+        <h1 class="text-light">Cadastro Tinder do IF</h1>
+    
+        <form action="aguarde.html" method="post">
+            <div class="mb-3 mt-5">
+                <label for="exampleInputText" class="form-label text-light">Nome de usuario</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Nome de usuario" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label text-light">Endereço de Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu e-mail">
+                <div id="emailHelp" class="form-text text-light">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPhone" class="form-label text-light">Telefone</label>
+                <input type="tel" class="form-control" id="exampleInputPhone" placeholder="Seu telefone">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputURL" class="form-label text-light">Link de alguma rede social de sua preferência</label>
+                <input type="text" class="form-control" placeholder="Link">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputNumber" class="form-label text-light">Altura</label>
+                <input type="number" step="any" class="form-control" id="exampleInputNumber" placeholder="Ex: 1.80">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputDate" class="form-label text-light">Data de nascimento</label>
+                <input type="date" class="form-control" id="exampleInputDate" placeholder="Data">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputFile" class="form-label text-light">Foto de perfil</label>
+                <input type="file" class="form-control" id="exampleInputFile">
+                <div id="imageTips" class="form-text text-light"> Certifique-se de que a foto seja bem iluminada, de preferência com luz natural. A boa iluminação destaca seus recursos e torna a foto mais atraente.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlSelect1" class="form-label text-light">Sexualidade</label>
+                <select class="form-select" id="exampleFormControlSelect1">
+                    <option>Heterossexual</option>
+                    <option>Homossexual</option>
+                    <option>Bissexual</option>
+                    <option>Pansexual</option>
+                    <option>Assexual</option>
+                    <option>Demissexual</option>
+                    <option>Outro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="coresFavoritas" class="form-label text-light">O que você procura?</label>
+                <select multiple class="form-select" id="coresFavoritas">
+                    <option value="vermelho">Um relacionamento sério</option>
+                    <option value="azul">um relacionamento aberto</option>
+                    <option value="verde">Algo mais casual</option>
+                    <option value="amarelo">Apenas amizades novas</option>
+                    <option value="roxo">Não sei ainda</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputTextarea" class="form-label text-light">Conte-nos um pouco sobre você</label>
+                <textarea class="form-control" id="exampleInputTextarea" rows="3" placeholder="Esse espaço é todo seu, use sua criatividade..."></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputTextarea" class="form-label text-light">Quem você quer ver aqui?</label>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="check1">
+                <label class="form-check-label text-light" for="check1">
+                  Homens
+                </label>
+              </div>
+            
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" value="" id="check2">
+                <label class="form-check-label text-light" for="check2">
+                  Mulheres
+                </label>
+              </div>
+            </div>
+
+            <div class="mt-4">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+            </div>
+
+        </form>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
