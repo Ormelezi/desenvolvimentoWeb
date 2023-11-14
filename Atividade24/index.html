@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+
+    <div id="lamp">
+        <img id="lampImage" src="lamp_off.png" alt="Lâmpada apagada">
+    </div>
+
+    <script>
+        const lampImage = document.getElementById('lampImage');
+
+        lampImage.addEventListener('mouseover', function () {
+            document.body.style.backgroundColor = "";
+            lampImage.src = 'LampOn.png';
+
+        });
+
+        lampImage.addEventListener('mouseout', function () {
+            document.body.style.backgroundColor = "black";
+            lampImage.src = 'LampOff.png';
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var nome = prompt("Qual é seu nome?");
+            var saudacao = document.createElement("h1");
+            saudacao.textContent = "Seja Bem vindo, " + nome + "!";
+            document.body.appendChild(saudacao);
+    
+
+            document.getElementById("adicionar").addEventListener("click", function() {
+                var novoParagrafo = document.createElement("p");
+                novoParagrafo.textContent = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit deleniti quos ratione, officiis nisi perferendis perspiciatis eaque quae ullam quam culpa consequuntur quibusdam soluta dolore delectus ex reprehenderit neque.";
+                document.body.appendChild(novoParagrafo);
+            });
+    
+
+            document.getElementById("remover").addEventListener("click", function() {
+                var paragrafos = document.querySelectorAll("p");
+                paragrafos.forEach(function(paragrafo) {
+                    paragrafo.remove();
+                });
+            });
+        });
+    </script>
+
+    <div class="divBtt">
+        <button id="adicionar">Adicionar Parágrafo</button>
+        <button id="remover">Remover Parágrafos</button>
+    </div>
+    
+</body>
+</html>

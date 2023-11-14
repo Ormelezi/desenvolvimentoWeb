@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+    </script>
+</head>
+<body>
+
+    <div>
+        <div class="color-box" id="box1" style="background-color: red;"></div>
+        <div class="color-box" id="box2" style="background-color: blue;"></div>
+        <div class="color-box" id="box3" style="background-color: green;"></div>
+        <div class="color-box" id="box4" style="background-color: yellow;"></div>
+        <div class="color-box" id="box5" style="background-color: purple;"></div>
+    </div>
+    
+    <div>
+        <button id="reset">Reset</button>
+    </div>
+
+    <div id="preview-text">Preview</div>
+
+    <script>
+        const boxes = document.querySelectorAll('.color-box');
+        const previewText = document.getElementById('preview-text');
+    
+        var LastColor = ""; 
+        var ResetColor = "";
+
+        document.getElementById("reset").addEventListener("click", function() {
+            document.body.style.backgroundColor = this.style.backgroundColor;
+                });
+    
+        boxes.forEach(box => {
+            box.addEventListener('mouseover', function () {
+                document.body.style.backgroundColor = this.style.backgroundColor;
+                previewText.style.display = 'block';
+                previewText.innerText = 'Preview';
+            });
+    
+            box.addEventListener('mouseout', function () {
+                document.body.style.backgroundColor = LastColor;
+                previewText.style.display = 'none';
+                previewText.innerText = '';
+            });
+    
+            box.addEventListener('click', function () {
+                document.body.style.backgroundColor = this.style.backgroundColor;
+                LastColor = this.style.backgroundColor;  
+            });
+        });
+    </script>
+
+</body>
+
+</html>
