@@ -1,19 +1,31 @@
-$(document).ready(function () {
-    $('#preview').hide();
+document.getElementById("add").addEventListener("click", function() {
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+    const result = num1 + num2;
+    document.getElementById("result").value = result;
 });
-function corPreview(cor) {
-    var corAtual = cor.replace("bt_", "");
-    $('body').css('background-color', corAtual);
-    $('#preview').show();
-}
-function corPreviewRemove() {
-    $('body').css('background-color', '');
-    $('#preview').hide();
-}
-function corFixa(cor) {
-    $('body').removeClass();
-    $('body').addClass(cor);
-}
-function reset() {
-    $('body').removeClass();
-}
+
+document.getElementById("subtract").addEventListener("click", function() {
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+    const result = num1 - num2;
+    document.getElementById("result").value = result;
+});
+
+document.getElementById("multiply").addEventListener("click", function() {
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+    const result = num1 * num2;
+    document.getElementById("result").value = result;
+});
+
+document.getElementById("divide").addEventListener("click", function() {
+    const num1 = parseFloat(document.getElementById("num1").value);
+    const num2 = parseFloat(document.getElementById("num2").value);
+    if (num2 === 0) {
+        document.getElementById("result").value = "Erro: Divisão por zero";
+    } else {
+        const result = num1 / num2;
+        document.getElementById("result").value = result;
+    }
+});
